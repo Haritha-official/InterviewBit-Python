@@ -1,0 +1,39 @@
+import itertools
+
+def main():
+    # ----------------------------
+    # 1. Print 1000 space-separated integers 
+    #    starting from 1000 with a common difference of 500
+    # ----------------------------
+    count = 0
+    for i in itertools.count(1000, 500):
+        if count == 1000:   # stop after printing 1000 numbers
+            break
+        print(i, end=" ")
+        count += 1
+
+    print()  # move to next line for clarity
+
+    # ----------------------------
+    # 2. Print all uppercase alphabets 15 times
+    #    (A to Z repeated 15 times = 26 × 15 = 390 characters)
+    # ----------------------------
+    count = 0
+    for i in itertools.cycle('ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
+        if count == 26 * 15:   # limit output to 390 characters
+            break
+        print(i, end=" ")
+        count += 1
+
+    print()  # move to next line for clarity
+
+    # ----------------------------
+    # 3. Print a list containing 1000 occurrences of the integer 4
+    # ----------------------------
+    print(list(itertools.repeat(4, 1000)))
+
+    return 0
+
+
+if __name__ == '__main__':
+    main()
