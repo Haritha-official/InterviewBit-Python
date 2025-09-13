@@ -1,0 +1,43 @@
+Let’s analyze the code carefully:
+
+int a = 0, b = 0; 
+
+for (i = 0; i < N; i++) {           // Outer loop → runs N times
+    for (j = 0; j < N; j++) {       // Inner loop → runs N times
+        a = a + j;                  // O(1) work
+    }
+}
+
+for (k = 0; k < N; k++) {           // Separate loop → runs N times
+    b = b + k;                      // O(1) work
+}
+
+⏱ Time Complexity
+
+Nested loops (i, j):
+
+Outer loop runs N times.
+
+Inner loop runs N times for each i.
+
+Total operations = N × N = N².
+
+Second loop (k):
+
+Runs N times with constant work.
+
+Complexity = O(N).
+
+Total = O(N² + N) = O(N²) (since N² dominates N).
+
+💾 Space Complexity
+
+Only scalar variables a, b, i, j, k.
+
+No arrays, recursion, or extra structures.
+
+Space = O(1).
+
+✅ Correct Answer:
+
+O(N * N) time, O(1) space
