@@ -1,0 +1,27 @@
+## Time Complexity
+
+- **Basic primer**
+  - LOOP_CMPL
+  - NESTED_CMPL
+  - NESTED_CMPL2
+  - CHOOSE4
+
+- **Math**
+  - WHILE_CMPL
+  - NESTED_CMPL3
+  - LOOP_CMPL2
+  - GCD_CMPL
+
+- **Compare functions**
+  - CHOOSE3
+  - CHOOSE1
+  - CHOOSE2
+
+- **Function Calling itself**
+  - REC_CMPL1
+  - REC_CMPL2
+  - REC_CMPL3
+
+- **Amortized complexity**
+  - AMORTIZED1
+  
