@@ -1,0 +1,7 @@
+When we say algorithm X is asymptotically more efficient than Y, it means:
+
+👉 For large input sizes (N → ∞), algorithm X will run faster (have lower time complexity) than Y, regardless of constants or lower-order terms.
+
+✅ Correct Answer:
+
+X will always be a better choice for large inputs
