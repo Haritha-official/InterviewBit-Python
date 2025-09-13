@@ -1,0 +1,42 @@
+The correct answer is:
+
+✅ O(N + M) time, O(1) space
+
+📘 Explanation 
+
+Let's break down the code step by step:
+
+int a = 0, b = 0;    
+
+for (i = 0; i < N; i++) {
+    a = a + rand();  // O(1) operation, repeated N times
+}
+
+for (j = 0; j < M; j++) {
+    b = b + rand();  // O(1) operation, repeated M times
+}
+
+⏱ Time Complexity:
+
+The first loop runs N times. Each iteration does constant work (a = a + rand()), so its complexity is O(N).
+
+The second loop runs M times, with constant work (b = b + rand()), so its complexity is O(M).
+
+Since the loops are independent (not nested), the total time complexity is the sum:
+O(N)+O(M)=O(N+M)
+
+💾 Space Complexity:
+
+Variables a, b, i, j use constant space → O(1).
+
+The function rand() also uses O(1) space.
+
+No arrays, recursion, or extra data structures are used.
+
+So total space complexity is O(1).
+
+📌 Final Result:
+
+Time Complexity: O(N + M)
+
+Space Complexity: O(1)
